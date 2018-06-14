@@ -1,0 +1,511 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500|Nunito+Sans");
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Montserrat"; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: "Nunito Sans";
+  background-color: #fff; }
+
+* {
+  box-sizing: border-box; }
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.button {
+  display: inline-block;
+  text-align: center;
+  background-color: #F1CDB3;
+  border: 2px solid #F1CDB3;
+  color: #000;
+  font-family: Georgia, serif;
+  font-size: 17px;
+  padding: 13px 40px;
+  border-radius: 25px; }
+
+.container {
+  max-width: 1170px;
+  position: relative;
+  padding: 0 15px;
+  margin: auto; }
+
+header {
+  background: url(../images/header.png) no-repeat center top/cover;
+  padding-top: 4%;
+  height: 100vh;
+  background-color: #221F1E; }
+  header .dog {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 75%;
+    min-height: 420px; }
+  header .container {
+    height: 100%;
+    position: relative; }
+
+.header-logo {
+  display: inline-block; }
+  .header-logo__title {
+    font-size: 32px;
+    font-family: Georgia, serif;
+    color: #F1CDB3; }
+  .header-logo__description {
+    color: #fff;
+    font-size: 13px; }
+
+.header-nav {
+  display: inline-block;
+  float: right; }
+  .header-nav ul {
+    font-size: 0; }
+  .header-nav li {
+    display: inline-block;
+    padding: 17px 0; }
+  .header-nav li:not(:last-child) {
+    margin-right: 35px; }
+  .header-nav a {
+    display: block;
+    font-size: 15px;
+    color: #fff; }
+
+.hamburger {
+  position: absolute;
+  right: 16px;
+  top: 5px;
+  display: none; }
+  .hamburger img {
+    height: 45px; }
+
+.header-main {
+  height: 88%;
+  display: flex;
+  align-items: center; }
+  .header-main__info {
+    display: inline-block;
+    width: 40%; }
+    .header-main__info .h1 {
+      color: #fff;
+      line-height: 57px;
+      letter-spacing: 2px;
+      font-size: 44px;
+      font-family: Georgia, serif;
+      font-weight: lighter;
+      margin-top: 0; }
+    .header-main__info p {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 15px;
+      margin-bottom: 40px; }
+
+.about {
+  background-color: #FAFAFA; }
+  .about .container {
+    padding: 100px 15px; }
+    .about .container .pets {
+      text-align: center;
+      float: left;
+      display: inline-block;
+      font-size: 0;
+      width: 50%; }
+    .about .container .h1 {
+      font-size: 35px;
+      font-family: Georgia, serif;
+      color: #545454;
+      font-weight: lighter;
+      line-height: 45px; }
+    .about .container p {
+      font-size: 15px;
+      color: #4C4C4C;
+      margin-top: 30px;
+      width: 90%; }
+
+.offers {
+  background-color: #F6F6F6;
+  text-align: center;
+  overflow: auto; }
+  .offers .h1 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+    color: #545454;
+    margin: 65px 0;
+    font-weight: lighter; }
+  .offers .carousel-offers {
+    padding: 0 120px; }
+    .offers .carousel-offers .item {
+      text-align: center;
+      padding: 30px;
+      border-radius: 10px;
+      background-color: #fafafa; }
+      .offers .carousel-offers .item:hover {
+        box-shadow: 0 0 20px 0px #ececec;
+        -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        transform: scale(1.03); }
+      .offers .carousel-offers .item .button {
+        background-color: #fafafa; }
+        .offers .carousel-offers .item .button:hover {
+          background-color: #F1CDB3; }
+      .offers .carousel-offers .item .img-container {
+        height: 240px;
+        width: 100%; }
+        .offers .carousel-offers .item .img-container img {
+          height: 100%;
+          display: inline-block;
+          width: auto; }
+      .offers .carousel-offers .item__title {
+        font-size: 20px;
+        font-family: Georgia, serif;
+        padding: 20px 0; }
+  .offers .offers-button {
+    margin: 65px 0; }
+  .offers .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0; }
+    .offers .owl-nav > button {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border: 2px solid #F1CDB3 !important;
+      border-radius: 50%;
+      font-weight: bold;
+      position: absolute; }
+      .offers .owl-nav > button.owl-prev {
+        left: 0; }
+      .offers .owl-nav > button.owl-next {
+        right: 0; }
+
+.help {
+  overflow: auto;
+  text-align: center; }
+  .help .h1 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+    color: #545454;
+    margin: 65px 0;
+    font-weight: lighter; }
+  .help .help-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .help .help-list .item {
+      text-align: center;
+      flex-basis: 17%;
+      margin-bottom: 65px; }
+      .help .help-list .item .icon {
+        display: inline-block;
+        background: url(../images/Icons.png) no-repeat;
+        width: 60px;
+        height: 65px;
+        vertical-align: bottom;
+        margin-bottom: 30px; }
+      .help .help-list .item .one {
+        width: 45px; }
+      .help .help-list .item .two {
+        width: 65px;
+        background-position: -45px 0; }
+      .help .help-list .item .three {
+        width: 58px;
+        background-position: -110px 0; }
+      .help .help-list .item .four {
+        width: 58px;
+        background-position: -168px 0; }
+      .help .help-list .item .five {
+        width: 30px;
+        background-position: -226px 0; }
+      .help .help-list .item .six {
+        width: 64px;
+        background-position: -256px 0; }
+      .help .help-list .item .seven {
+        width: 58px;
+        background-position: -320px 0; }
+      .help .help-list .item .eight {
+        width: 65px;
+        background-position: -378px 0; }
+      .help .help-list .item .nine {
+        width: 54px;
+        background-position: -443px 0; }
+      .help .help-list .item .item-title {
+        font-size: 20px;
+        font-family: Georgia, serif;
+        color: #545454; }
+
+.donation {
+  background-color: #F6F6F6;
+  overflow: auto;
+  padding: 80px 0; }
+  .donation .pets {
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block; }
+  .donation .donation-main {
+    width: 32%;
+    display: inline-block;
+    vertical-align: middle; }
+    .donation .donation-main .h1 {
+      font-family: Georgia, serif;
+      font-size: 35px;
+      color: #545454;
+      margin: 0;
+      font-weight: lighter; }
+    .donation .donation-main .card-composition {
+      display: block;
+      margin: 25px 0; }
+      .donation .donation-main .card-composition .bank {
+        font-size: 15px;
+        font-family: Georgia, serif;
+        color: #545454; }
+      .donation .donation-main .card-composition .card-number {
+        margin-top: 10px;
+        display: inline-block;
+        background-color: #F1CDB3;
+        font-size: 0;
+        padding: 13px 15px;
+        border-radius: 10px;
+        color: #292929;
+        font-family: "Times New Roman", Times, serif; }
+      .donation .donation-main .card-composition .fa-credit-card {
+        font-size: 25px;
+        vertical-align: middle;
+        margin-right: 15px; }
+      .donation .donation-main .card-composition .number {
+        vertical-align: middle;
+        font-size: 20px; }
+    .donation .donation-main .legal-info {
+      font-size: 12px;
+      font-style: italic;
+      color: #B2B2B2; }
+
+.footer {
+  background: url(../images/Footer-background.png) no-repeat center top/cover; }
+  .footer .container {
+    padding: 60px 15px; }
+  .footer .footer-item {
+    display: inline-block;
+    width: 22%;
+    vertical-align: top;
+    margin-right: 150px; }
+    .footer .footer-item .h1 {
+      font-family: Georgia, serif;
+      font-size: 35px;
+      color: #fff;
+      margin: 0;
+      font-weight: lighter; }
+    .footer .footer-item .item-details {
+      display: block;
+      margin-top: 30px;
+      padding-left: 60px;
+      position: relative; }
+      .footer .footer-item .item-details .icon-details {
+        background-image: url(../images/Icons-2.png);
+        display: inline-block;
+        position: absolute;
+        left: 0; }
+      .footer .footer-item .item-details .e-mail {
+        background-position: 0 -10px;
+        height: 26px;
+        width: 40px; }
+      .footer .footer-item .item-details .telephone {
+        background-position: -40px -4px;
+        height: 32px;
+        width: 40px; }
+      .footer .footer-item .item-details .location {
+        background-position: -80px 0;
+        height: 36px;
+        width: 25px; }
+      .footer .footer-item .item-details .text-details {
+        vertical-align: middle;
+        font-size: 20px;
+        color: #F1CDB3;
+        font-family: "Times New Roman", Times, serif; }
+    .footer .footer-item .for-low {
+      padding-left: 45px; }
+
+/* Ipad pro */
+@media (max-width: 1024px) and (min-height: 1366px) {
+  header .dog {
+    display: none; }
+
+  .header-main__info {
+    width: 50%;
+    text-align: center;
+    margin: auto; }
+    .header-main__info .h1 {
+      font-size: 50px; }
+    .header-main__info p {
+      font-size: 18px; } }
+/* Ipad */
+@media (max-width: 1024px) and (min-height: 768px) {
+  header .dog {
+    display: none; }
+
+  .header-main__info {
+    width: 50%;
+    text-align: center;
+    margin: auto; }
+
+  .about .container .pets {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center; }
+  .about .container .h1 {
+    text-align: center; }
+  .about .container p {
+    width: 100%;
+    text-align: center; } }
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .footer .footer-item {
+    width: 33%; } }
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  header .dog {
+    display: none; }
+
+  .donation .pets {
+    display: block;
+    width: 100%; }
+  .donation .donation-main {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+
+  .footer .footer-item {
+    width: 49%;
+    margin: 0; } }
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  header .dog {
+    display: none; }
+  header .header-main {
+    height: 88%; }
+    header .header-main__info {
+      display: block;
+      width: 100%;
+      text-align: center; }
+
+  .header-nav {
+    display: none;
+    float: none; }
+    .header-nav li {
+      display: block;
+      padding: 0;
+      padding-top: 34px; }
+    .header-nav li:not(:last-child) {
+      margin-right: 0; }
+    .header-nav a {
+      text-align: center; }
+
+  .hamburger {
+    display: inline-block !important; }
+
+  .about .container .pets {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 40px; }
+  .about .container .h1 {
+    text-align: center; }
+  .about .container p {
+    width: 100%;
+    text-align: center; }
+
+  .offers .carousel-offers {
+    padding: 0; }
+    .offers .carousel-offers .item:hover {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); }
+  .offers .owl-nav {
+    display: none; }
+
+  .help .help-list .item {
+    flex-basis: 30%; }
+
+  .donation .pets {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px; }
+  .donation .donation-main {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto; }
+
+  .footer .footer-item {
+    width: 49%;
+    margin: 0; } }
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  .help .help-list .item {
+    flex-basis: 50%; }
+
+  .donation .pets {
+    display: none; }
+  .donation .donation-main {
+    width: 100%; }
+    .donation .donation-main .card-composition .card-number {
+      padding: 4px 5px; }
+      .donation .donation-main .card-composition .card-number .fa-credit-card {
+        margin-right: 5px; }
+
+  .footer .footer-item {
+    width: 100%;
+    margin: 0;
+    text-align: center; }
+    .footer .footer-item:first-child {
+      margin-bottom: 50px; }
+    .footer .footer-item .item-details {
+      display: inline-block; } }
+
+/*# sourceMappingURL=main.css.map */
