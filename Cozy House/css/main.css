@@ -73,7 +73,6 @@ body {
   padding: 0 15px;
   margin: auto; }
 
-/* Header */
 header {
   background: url(../images/header.png) no-repeat center top/cover;
   padding-top: 4%;
@@ -142,7 +141,6 @@ header {
       font-size: 15px;
       margin-bottom: 40px; }
 
-/* About */
 .about {
   background-color: #FAFAFA; }
   .about .container {
@@ -165,7 +163,6 @@ header {
       margin-top: 30px;
       width: 90%; }
 
-/* Offes */
 .offers {
   background-color: #F6F6F6;
   text-align: center;
@@ -223,7 +220,6 @@ header {
       .offers .owl-nav > button.owl-next {
         right: 0; }
 
-/* Help */
 .help {
   overflow: auto;
   text-align: center; }
@@ -279,7 +275,6 @@ header {
         font-family: Georgia, serif;
         color: #545454; }
 
-/* Donation */
 .donation {
   background-color: #F6F6F6;
   overflow: auto;
@@ -327,14 +322,18 @@ header {
       font-style: italic;
       color: #B2B2B2; }
 
-/* Footer */
 .footer {
   background: url(../images/Footer-background.png) no-repeat center top/cover; }
   .footer .container {
-    padding: 60px 15px; }
+    padding: 60px 15px;
+    position: relative; }
+  .footer .footer-dog {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
   .footer .footer-item {
     display: inline-block;
-    width: 22%;
+    width: 25%;
     vertical-align: top;
     margin-right: 150px; }
     .footer .footer-item .h1 {
@@ -407,10 +406,13 @@ header {
   .about .container p {
     width: 100%;
     text-align: center; } }
+@media (max-width: 1075px) {
+  .footer .footer-dog {
+    display: none; } }
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
   .footer .footer-item {
-    width: 33%; } }
+    width: 25%; } }
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
   header .dog {

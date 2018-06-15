@@ -1,8 +1,5 @@
 $(document).ready(function($) {
-	jQuery('.hamburger').on('click', function(){
-    jQuery(this).toggleClass('active');
-    jQuery('.header-nav').slideToggle();
-});
+	
 	$(".owl-carousel").owlCarousel({
 		loop: true,
 		margin: 25,
