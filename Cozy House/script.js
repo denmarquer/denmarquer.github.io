@@ -1,5 +1,7 @@
 $(document).ready(function($) {
-	
+	$(".hamburger").click(function(){
+	$(".header-nav").slideToggle();
+	});
 	$(".owl-carousel").owlCarousel({
 		loop: true,
 		margin: 25,
