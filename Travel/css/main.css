@@ -82,7 +82,12 @@ a {
   padding: 15px 0;
   text-transform: uppercase;
   border-radius: 25px;
-  text-align: center; }
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.1s ease-in-out; }
+  .button:hover {
+    background-color: #5658be; }
 
 /* Header */
 .header {
@@ -100,7 +105,7 @@ a {
 
 .header-logo {
   float: left;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 900;
   color: #fff;
   display: inline-block;
@@ -112,11 +117,12 @@ a {
   .header-nav ul {
     display: inline-block;
     font-size: 0;
-    vertical-align: middle; }
+    position: relative;
+    top: 4px; }
     .header-nav ul li {
       display: inline-block; }
       .header-nav ul li:not(:last-child) {
-        margin-right: 30px; }
+        margin-right: 20px; }
       .header-nav ul li .nav-text {
         display: block;
         padding: 5px 3px;
@@ -211,21 +217,14 @@ a {
       .destination__top-line .panel-select input[name="guests"] {
         border-radius: 25px; }
     .destination__top-line .button {
-      flex-basis: 20%;
-      background-color: #6F72F6;
-      color: #fff;
-      outline: none;
-      cursor: pointer;
-      padding: 15px 0;
-      text-transform: uppercase;
-      border-radius: 25px; }
+      flex-basis: 20%; }
   .destination__images {
     display: flex;
     font-size: 0;
     flex-wrap: wrap;
     flex-direction: column;
     flex-flow: row wrap;
-    margin: 120px 0; }
+    margin: 80px 0; }
     .destination__images__item {
       flex: auto;
       width: 360px;
@@ -261,12 +260,12 @@ a {
 
 /* Order */
 .order {
-  padding: 130px 0; }
+  padding: 100px 0; }
   .order .h1 {
     text-align: center;
-    margin-bottom: 90px; }
+    margin-bottom: 80px; }
   .order__offer {
-    margin-bottom: 130px; }
+    margin-bottom: 80px; }
     .order__offer .tabs {
       font-size: 0;
       text-align: center;
@@ -284,6 +283,10 @@ a {
         .order__offer .tabs .tab.active {
           background-color: #6F72F7;
           color: #fff; }
+          .order__offer .tabs .tab.active:hover {
+            font-weight: inherit; }
+        .order__offer .tabs .tab:hover {
+          font-weight: 700; }
     .order__offer .tab-content {
       font-size: 0; }
       .order__offer .tab-content .tab-item .col {
@@ -311,7 +314,7 @@ a {
             font-size: 24px; }
     .order__offer .button {
       margin: 0 auto;
-      margin-top: 90px;
+      margin-top: 80px;
       display: block;
       width: 250px; }
   .order__blog .blog-row {
@@ -352,7 +355,7 @@ a {
     display: block;
     width: 250px;
     margin: auto;
-    margin-top: 90px; }
+    margin-top: 80px; }
 
 /* Contact */
 .contact {
@@ -585,9 +588,6 @@ a {
   .top-line .top-container {
     padding: 0; }
 
-  .header-nav li:not(:last-child) {
-    margin-right: 20px !important; }
-
   .header-main .h1 {
     font-size: 40px;
     margin-bottom: 60px; }
@@ -639,5 +639,19 @@ a {
   /* Footer */
   .footer__item {
     width: 50%; } }
+@media (max-width: 400px) {
+  /* Header */
+  .top-line .top-container {
+    padding: 0; }
+    .top-line .top-container .header-logo {
+      text-align: center;
+      float: none;
+      display: block; }
+    .top-line .top-container .header-nav {
+      float: none;
+      display: block;
+      text-align: center; }
+      .top-line .top-container .header-nav li {
+        text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */
