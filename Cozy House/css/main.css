@@ -115,8 +115,8 @@ header {
 
 .hamburger {
   position: absolute;
-  right: 16px;
-  top: 5px;
+  right: 15px;
+  top: 10px;
   display: none; }
   .hamburger img {
     height: 45px; }
