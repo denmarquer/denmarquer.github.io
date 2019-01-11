@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@impo@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1.1;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   -webkit-font-smoothing: subpixel-antialiased !important;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -134,7 +134,7 @@ a {
 
 /* Header */
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../images/Background.jpg) no-repeat center top/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/Background1.jpg) no-repeat center top/cover;
   padding: 130px 0;
   text-align: center; }
 
