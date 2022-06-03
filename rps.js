@@ -51,12 +51,16 @@ function game() {
       alert("Error! Choose either: rock, scissors or paper.");
       i--;
     }
+
+    if (pcScore === 3 || playerScore === 3) {
+      break;
+    }
   }
 
   if (pcScore > playerScore) {
-    return alert("You lose the five rounds :(");
+    return alert("You lose :(");
   } else if (pcScore < playerScore) {
-    return alert("You won the five round :)");
+    return alert("You win :)");
   }
 }
 
